@@ -25,6 +25,6 @@ The landmarks, returned from the hand estimation detection, are represented as x
 ### 3. Training LSTM Neural Network
  A sequential neural network is built using TensorFlow with fully-connected LSTM layers that give the temporal component to perform action detection. The TensorBoard logs are used to monitor the neural network.
 
-![lstm architecture](assets/Lstm%20Architecture.png) 
+![lstm architecture](assets/LstmArchitecture.jpg) 
 
   The proposed neural network is appended with the LSTM layers consisting of 64 LSTM units and the ReLU activation function. The input to this layer is the NumPy arrays of extracted keypoints dataset. The next two layers have 128 and 64 LSTM units respectively. This is followed by two fully-connected layers with 64 and 32 neural network neurons and ReLU\cite{relu} activation function. The final fully-connected layer uses a softmax activation function to obtain the output as probability values in the range of 0 to 1. Mediapipe combined with LSTM models requires only fewer data and it is faster to train and test the data and hence, gives faster detections.
