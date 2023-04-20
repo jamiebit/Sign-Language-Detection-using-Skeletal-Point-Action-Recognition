@@ -1,6 +1,9 @@
 # Sign-Language-Detection-using-Skeletal-Points
 
 ## Abstract
+
+![result](assets/result.gif) 
+
 Sign language is a visual language that serves as the primary means of communication in the non-hearing community. To facilitate daily communication between the non-hearing and the hearing communities, it is important to develop sign language translation techniques. The
 non-hearing community faces several challenges that hinder their interaction with the general public, such as the lack of knowledge of sign language and the availability of interpreters. A Sign Language Converter would thus be an important tool in breaking the communication barrier between the non-hearing and hearing communities. The aim of the project is to build a model that converts Indian Sign Language into corresponding words. We used a skeletal-point feature extraction framework to identify hand landmarks from sequences containing distinct signs and use these landmarks to build a model for recognizing hand gestures using various Long Short-Term Memory (LSTM) Networks. This approach can produce an accurate result compared to the traditional approach. 
 
@@ -29,4 +32,3 @@ The landmarks, returned from the hand estimation detection, are represented as x
 
   The proposed neural network is appended with the LSTM layers consisting of 64 LSTM units and the ReLU activation function. The input to this layer is the NumPy arrays of extracted keypoints dataset. The next two layers have 128 and 64 LSTM units respectively. This is followed by two fully-connected layers with 64 and 32 neural network neurons and ReLU activation function. The final fully-connected layer uses a softmax activation function to obtain the output as probability values in the range of 0 to 1. Mediapipe combined with LSTM models requires only fewer data and it is faster to train and test the data and hence, gives faster detections.
 
-![result](assets/result.gif) 
